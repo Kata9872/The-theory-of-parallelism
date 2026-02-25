@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 
 using namespace std;
 
@@ -14,9 +15,13 @@ int main() {
 
     const int n = 10000000;
     T res = 0;
+    vector<T> values(n);
 
     for (int i = 0; i < n; ++i){
-        res += sin(i*2*pi/n);
+        values[i] = sin(i*2*pi/n);
+    }
+    for (const auto& value : values) {
+        res+= value;
     }
 
     cout << res << endl;
