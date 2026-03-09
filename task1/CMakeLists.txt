@@ -10,4 +10,3 @@ add_executable(task task.cpp)
 
 if(USE_FLOAT)
     target_compile_definitions(task PRIVATE USE_FLOAT)
-endif()

@@ -1,2 +1,3 @@
 task1/build/
-task.out
+*.out
+test.cpp
