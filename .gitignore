@@ -1,4 +1,5 @@
 task1/build/
 task2/task1/build/
+task2/task2/build/
 *.out
 test.cpp
